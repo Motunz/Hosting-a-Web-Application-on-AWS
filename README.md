@@ -4,4 +4,9 @@
 This project will take you through the step by step process I took in building a scalable, cost effective and efficient web infrastructure for SmartShop, a mid-size retail company.
 ### Creating VPC
 Created a VPC(Virtual Priavte Cloud) for smartshop with 4 subnets, 2 public subnet and 2 private subnet in 2 AZ's(Availabilty Zone) to ensure high availability.
+#### Steps
+Logged in to my AWS console as an IAM user
+Searched for VPC through the search bar
+Clicked on MY VPC
+Created a VPC using VPC and more option.This is to ensure the creation of public and private Subnets, Internet Gateways, and Route Tables automatically.
 ![Image of VPC Created](/Created%20VPC.png)

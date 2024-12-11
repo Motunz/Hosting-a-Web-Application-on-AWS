@@ -14,3 +14,9 @@ This is to ensure the creation of public and private Subnets, Internet Gateways,
 ### Creating NACL(Network Access Control List)
 Created NACL to add a layer of security to the subnets by controlling traffic in and out of the subnets.
 #### Steps
+1. Searched Network ACL through the search bar.
+2. Created new NACL by clicking on Create Network ACL.
+3. Created NACL with inbound and outboud rules that allows SSH, HHTP, AND HTTPs traffic.
+4. Associated the  created NACL to the already created subnets(public) as my server will be in a public subnet. 
+![image of created NACL](/New%20NACL.png)
+![image of inbound rule to allow SSH and others](/NACL%20Inbound%20edited.png)

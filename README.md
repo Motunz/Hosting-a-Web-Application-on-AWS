@@ -35,4 +35,24 @@ An EC2 instance was launched to host the web server(Apache)
 5. Create a keypair and save it in a folder to be used later for connecting to the instance via the terminal.
 6. Set the auto assign public IP to ENABLED and configuration storage to 8gb.
 7. Launch instance.
+8. Instance start running once there is a 2/2 check passed.
 ![Image of Ec2 instance launched](/EC2.png)
+### Connecting to the instance.
+The instance was connected to via SSH Client on the GitBash terminal.
+#### Steps
+1. Click on the created instance and click on connect to connect via SSH client.
+2. Go to the folder where the keypair was saved, usualy a .pem file.
+3. Open the file with Gitbash. 
+4. Enter this code ssh-i-"yourkey.pem" ec2-user@Public DNS on your terminal to connect.
+![Image showing connecting to the isntance](/Connect%20Via%20SSH.png)
+![Image showing successful connection to the instance on Gitbash](/Successful%20SSH%20via%20Gitbash.png)
+### Installing Apache
+Apache was installed to serve as the web server.
+#### Paste this code to install apache
+1. sudo yum update -y
+2. sudo yum install httpd -y
+3. sudo systemctl start httpd
+4. sudo systemctl enable httpd
+5. Copy the instance public IP address and paste it in the browser to confirm apache is running.
+![Image showing successful running of Apache Web Server](/Apache%20Running.png)  
+

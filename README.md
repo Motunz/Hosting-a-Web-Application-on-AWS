@@ -6,9 +6,10 @@ This project will take you through the step by step process I took in building a
 Created a VPC(Virtual Priavte Cloud) for smartshop with 4 subnets, 2 public subnet and 2 private subnet in 2 AZ's(Availabilty Zone) to ensure high availability.
 #### Steps
 1. Log in to AWS console as an IAM user
-2. Search for VPC through the search bar
-3. Click on MY VPC
-4. Create a VPC using VPC and more option.
+2. The first thing to do for any AWS resources is to choose a region. I used North Virginia.
+3. Search for VPC through the search bar
+4. Click on MY VPC
+5. Create a VPC using VPC and more option.
 This is to ensure the creation of public and private Subnets, Internet Gateways, and Route Tables automatically.
 ![Image of VPC Created](/Created%20VPC.png)
 ### Creating NACL(Network Access Control List)

@@ -16,15 +16,16 @@ Created NACL to add a layer of security to the subnets by controlling traffic in
 #### Steps
 1. Search for Network ACL through the search bar.
 2. Create new NACL by clicking on Create Network ACL.
-3. Create NACL with inbound and outboud rules that allows SSH, HHTP, AND HTTPs traffic.
+3. Create NACL with inbound and outboud rules that allows SSH, HHTP, AND HTTPs traffic with rule number in ascending order(i.e 100, 101 etc).
 4. Associate the  created NACL to the already created subnets(public) as the server will be in a public subnet. 
 ![image of created NACL](/New%20NACL.png)
 ![image of inbound rule to allow SSH and others](/NACL%20Inbound%20edited.png)
 ### Creating a Security Group
 A security group was created to control traffic to and from the EC2 instance to be created. 
-1. Edit Inbound rule to allow SSH and HTTP from anywhere(i.e IPV4) with rule number in ascending order(i.e 100, 101 etc).
+1. Edit Inbound rule to allow SSH and HTTP from anywhere(i.e IPV4) 
 2. Leave Outbound rule at default (Allow all traffic).
 ![Image of created security group](/Security%20Group.png)
+![Image of security group rule](/SG%20Allow%20SSH.png)
 ### Launching EC2 Instance
 An EC2 instance was launched to host the web server(Apache)
 #### Steps
